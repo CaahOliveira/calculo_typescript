@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Cálculo TypeScript</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Cadastro de Produtos</h1>
+        
+        <div class="box-container">
+            <div class="box">
+                <h2>Produto</h2>
+                <p><strong>Nome:</strong> <span class="link">Gás</span></p>
+                <p><strong>Preço:</strong> <span class="preco">R$: 108.00</span></p>
+            </div>    
+
+            <div class="box">
+                <h2>Editar Produto</h2>
+                <label for="campoNome">Nome do Produto:</label>
+                <input type="text" clas="form-control" id="campoNome">
+
+                <label for="campoPreco">Preço do Produto:</label>
+                <input type="number" class="form-control" id="campoPreco" step="0.01">
+
+                <label for="campoImposto">Imposto %:</label>
+                <input type="number" class="form-control" id="campoImposto" step="0.01">
+
+                <button class="btn btn-primary mt-3" id="calc">Calcular</button>
+            </div>
+        
+        
+            <div class="row mt-4">
+                <div class="col-12">
+                <h2>Resultados</h2>
+                <p><strong>Nome:</strong> <span id="nome">-</span></p>
+                <p><strong>Preço:</strong> <span id="preco">-</span></p>
+                <p><strong>Preço com Imposto:</strong> <span id="imposto">-</span></p>
+                </div>
+            </div>
+      
+        </div>
+    
+    </div>
+
+    <script src="./JS/produto.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>
